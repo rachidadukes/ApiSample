@@ -28,4 +28,25 @@ Update-Database
 Sample of API
 https://api.restful-api.dev/objects
 
+=============================
+
+
+  "ApiSettings": {
+    "BaseUrl": "https://api.restful-api.dev/"
+  },
+
+===========================
+
+// Retrieve the API Base URL from the configuration
+string apiBaseUrl = builder.Configuration["ApiSettings:BaseUrl"];
+
+==============================
+
+builder.Services.AddHttpClient<ApiClient>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseUrl);
+});
+
+
+
 
