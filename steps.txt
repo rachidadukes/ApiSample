@@ -1,0 +1,31 @@
+create a project from the templete
+Asp .net Core web api
+
+
+====
+install the package Scalar
+Scalar.AspNetCore
+================
+video at 15:00
+add this code to program.cs file
+app.MapScalarApiReference();
+==============
+run the app
+load
+https://localhost:7244/scalar/v1
+https://localhost:7244/swagger/index.html
+==============
+add a model class
+add an empty API controller
+
+=====================
+create the database
+Add-Migration Initial
+Update-Database
+Add-Migration Seeding
+Update-Database
+================
+Sample of API
+https://api.restful-api.dev/objects
+
+
